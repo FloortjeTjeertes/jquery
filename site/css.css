@@ -1,0 +1,31 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+h1, h3 {text-align: center;}
+
+ main{display: grid;
+ grid-template-columns:  1fr 1fr;
+justify-items: center;
+}
+footer{
+  text-align: center;
+  background: #444;
+  padding: .5em;
+  position: relative;
+  cursor: pointer;
+}
+@@media screen and (min-width: 800px) {
+  main{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+@media screen and (min-width: 1040px){
+  main{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+}
